@@ -210,7 +210,7 @@ Potential controls include:
 
 ### 5. Evidence and Control Testing
 
-A GRC analyst would not simply assume that a control is working.
+I would not assume that a security control is working simply because it has been documented or implemented. I would request appropriate evidence and assess whether the control is operating as intended.
 
 Evidence could include:
 
