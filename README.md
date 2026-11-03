@@ -1,296 +1,256 @@
-# 🔐 CIA Triad Risk Assessment: OsCorp Research Document
+# CIA Triad Risk Assessment | OsCorp Research Document
 
-## 📌 Project Overview
+## 1. Executive Summary
 
-This project is a GRC case study applying the CIA Triad to assess the security of a highly confidential drug research document.
+This assessment evaluates the security risks associated with a highly confidential pharmaceutical research document at OsCorp, a fictional organisation developing a new medication.
 
-The assessment considers three core information security objectives:
+The assessment applies the Confidentiality, Integrity and Availability (CIA) Triad to identify potential information security risks, evaluate their business implications and recommend appropriate security controls.
 
-- Confidentiality
-- Integrity
-- Availability
+The review considers how sensitive research information could be exposed to unauthorised individuals, modified incorrectly or maliciously, or become unavailable to authorised researchers.
 
-The objective is to identify potential risks, consider their impact, and propose appropriate security controls.
+The assessment also identifies evidence requirements and control validation considerations to support the evaluation of security safeguards.
 
-> **Note:** This is a simulated case study created for cybersecurity and GRC learning purposes. OsCorp is a fictional organization.
+## 2. Business Context
 
----
+OsCorp is in the early stages of developing a highly confidential new medication. The research project is led by Chief Scientist Harry Osborn.
 
-## 🎯 Scenario
+Key research information, including ingredients required for experimentation, is maintained in a Microsoft Word document.
 
-OsCorp is developing a highly confidential new medication.
+Given the sensitivity and commercial value of this information, unauthorised disclosure, modification or loss could affect research activities, intellectual property, business operations and competitive advantage.
 
-The project is in early development and is led by the Chief Scientist, Harry Osborn.
+The assessment therefore considers the security requirements necessary to protect the document throughout its use and storage.
 
-The research information is contained in a Microsoft Word document that includes ingredients required for experimentation.
+## 3. Assessment Objectives
 
-Because the document contains sensitive research information, protecting its confidentiality, integrity, and availability is important.
+The assessment focuses on three fundamental information security objectives:
 
----
+- **Confidentiality:** Ensuring that sensitive research information is accessible only to authorised individuals.
+- **Integrity:** Maintaining the accuracy, completeness and reliability of the research information.
+- **Availability:** Ensuring that authorised researchers can access the document when required.
 
-# 🔒 1. Confidentiality
+## 4. Confidentiality Assessment
 
-### Assessment Question
+### Assessment Objective
 
-> Who should be able to access the document, and how can unauthorized access be prevented?
+Evaluate how access to the confidential research document is managed and identify safeguards that can prevent unauthorised access or disclosure.
 
-### Key Assessment Questions
+### Assessment Considerations
 
-- Who currently has access to the document?
-- Who actually requires access?
-- Is access restricted to authorized members of the research team?
-- Are former employees or unauthorized third parties able to access it?
-- Are different access levels defined?
-- Is Multi-Factor Authentication (MFA) enabled?
-- Is the document encrypted at rest?
-- Is the document encrypted during transmission?
-- Can users download, copy, or externally share the document?
-- Is access to the document logged and monitored?
+- Identify individuals and roles with access to the document.
+- Determine whether access is limited to personnel with a legitimate business need.
+- Review access permissions and privilege levels.
+- Consider whether former employees or unauthorised third parties retain access.
+- Assess the use of Multi-Factor Authentication (MFA).
+- Determine whether the document is encrypted at rest and during transmission.
+- Review restrictions on downloading, copying and external sharing.
+- Evaluate access logging and monitoring capabilities.
 
-### Potential Risks
+### Potential Risk Exposure
 
-- Unauthorized access
-- Unauthorized disclosure
-- Intellectual property exposure
-- External sharing of sensitive research information
+- Unauthorised access to sensitive research information.
+- Disclosure of confidential intellectual property.
+- Exposure of commercially sensitive information to external parties.
+- Unauthorised distribution or sharing of research documents.
 
-### Potential Controls
+### Recommended Security Controls
 
-- Role-Based Access Control (RBAC)
-- Least privilege
-- Multi-Factor Authentication (MFA)
-- Encryption
-- Data Loss Prevention (DLP)
-- Access logging and monitoring
-- External sharing restrictions
-- Periodic access reviews
+| Control | Security Objective |
+|---|---|
+| Role-Based Access Control (RBAC) | Restrict access based on defined user roles. |
+| Least Privilege | Ensure users receive only the permissions required for their responsibilities. |
+| Multi-Factor Authentication (MFA) | Strengthen authentication and reduce the risk of unauthorised account access. |
+| Encryption | Protect research information at rest and in transit. |
+| Data Loss Prevention (DLP) | Detect or restrict unauthorised movement of sensitive information. |
+| Access Logging and Monitoring | Provide visibility into access and document-related activities. |
+| External Sharing Restrictions | Limit unauthorised distribution of research information. |
+| Periodic Access Reviews | Identify and remove unnecessary or inappropriate access. |
 
----
+## 5. Integrity Assessment
 
-# 🛡️ 2. Integrity
+### Assessment Objective
 
-### Assessment Question
+Evaluate the safeguards required to protect the research document from unauthorised, accidental or malicious modification.
 
-> How can OsCorp ensure that the information in the document is not changed incorrectly or maliciously?
+### Assessment Considerations
 
-### Key Assessment Questions
+- Identify individuals authorised to modify the document.
+- Determine whether read and edit permissions are appropriately separated.
+- Review restrictions on editing sensitive research information.
+- Establish whether document version history is maintained.
+- Determine whether changes can be attributed to individual users.
+- Assess whether formal review and approval processes exist.
+- Consider independent review of sensitive changes.
+- Determine whether previous document versions can be restored.
 
-- Who can modify the document?
-- Can everyone with read access also edit it?
-- Are editing permissions restricted?
-- Is version history enabled?
-- Can changes be attributed to individual users?
-- Is there a formal review or approval process?
-- Are sensitive changes independently reviewed?
-- Can previous versions be restored?
+### Potential Risk Exposure
 
-### Potential Risks
+- Unauthorised modification of research information.
+- Accidental changes to experimental ingredients or research details.
+- Incorrect or unreliable research information.
+- Loss of data accuracy and trustworthiness.
 
-- Unauthorized modification
-- Accidental changes
-- Incorrect research information
-- Loss of trustworthy or accurate data
+### Recommended Security Controls
 
-### Potential Controls
+| Control | Security Objective |
+|---|---|
+| Restricted Edit Permissions | Limit modification rights to authorised personnel. |
+| Version History | Maintain records of previous document versions. |
+| Change Logging | Record who made changes and when they occurred. |
+| Approval Workflows | Ensure sensitive changes are reviewed and authorised. |
+| Document Integrity Monitoring | Identify unexpected or unauthorised modifications. |
+| Digital Signatures, Where Appropriate | Support document authenticity and integrity verification. |
+| Versioned Backups | Preserve recoverable copies of the document. |
+| Separation of Duties | Reduce the risk of inappropriate changes being made and approved by the same individual. |
 
-- Restricted edit permissions
-- Version history
-- Change logging
-- Approval workflows
-- Document integrity monitoring
-- Digital signatures where appropriate
-- Versioned backups
-- Separation of duties
+## 6. Availability Assessment
 
----
+### Assessment Objective
 
-# ☁️ 3. Availability
+Evaluate the safeguards required to ensure that authorised researchers can access the document when needed and recover it following disruption.
 
-### Assessment Question
+### Assessment Considerations
 
-> Can authorized researchers access the document when they need it?
+- Identify where the research document is stored.
+- Assess the potential impact of storage or system outages.
+- Determine whether regular backups are maintained.
+- Review backup frequency and retention arrangements.
+- Establish whether accidentally deleted documents can be recovered.
+- Consider the impact of ransomware or other disruptive incidents.
+- Review disaster recovery arrangements.
+- Determine expected recovery requirements.
+- Identify potential single points of failure.
 
-### Key Assessment Questions
+### Potential Risk Exposure
 
-- Where is the document stored?
-- What happens if the storage system becomes unavailable?
-- Are backups available?
-- How frequently is the document backed up?
-- Can the document be recovered if accidentally deleted?
-- What happens if ransomware affects the document?
-- Is there a disaster recovery process?
-- How quickly would access need to be restored?
-- Is there a single point of failure?
+- Loss of access to critical research information.
+- Accidental deletion or corruption of the document.
+- Storage or system outages.
+- Ransomware-related disruption.
+- Reduced research productivity.
+- Delays to research and development activities.
 
-### Potential Risks
+### Recommended Security Controls
 
-- Loss of access to research information
-- Accidental deletion
-- System outage
-- Ransomware
-- Loss of productivity
-- Research disruption
+| Control | Security Objective |
+|---|---|
+| Regular Backups | Maintain recoverable copies of research information. |
+| Versioned Backups | Support recovery of earlier document versions. |
+| Disaster Recovery Procedures | Establish recovery arrangements following significant disruption. |
+| Business Continuity Planning | Support continuation of critical research activities. |
+| Redundant Storage | Reduce dependence on a single storage location or system. |
+| Recovery Testing | Validate that backups can be successfully restored. |
+| Availability Monitoring | Identify storage or system availability issues. |
 
-### Potential Controls
+## 7. CIA Risk Assessment Summary
 
-- Regular backups
-- Versioned backups
-- Disaster recovery procedures
-- Business continuity planning
-- Redundant storage
-- Recovery testing
-- Availability monitoring
-
----
-
-# 📊 CIA Risk Assessment Summary
-
-| CIA Principle | Key Question | Example Risk | Potential Controls |
+| Security Principle | Key Assessment Question | Potential Risk | Recommended Controls |
 |---|---|---|---|
-| Confidentiality | Who can access the document? | Unauthorized disclosure | MFA, RBAC, encryption, DLP |
-| Integrity | Can unauthorized users modify the information? | Incorrect or malicious changes | Access restrictions, version control, approval workflows |
-| Availability | Can authorized users access the document when needed? | Document becomes unavailable | Backups, redundancy, recovery procedures |
+| Confidentiality | Who should have access to the document? | Unauthorised disclosure of research information | MFA, RBAC, least privilege, encryption and DLP |
+| Integrity | Can the information be modified without appropriate authorisation? | Incorrect or malicious changes to research information | Restricted editing, version history, change logging and approval workflows |
+| Availability | Can authorised researchers access the document when required? | Document becomes unavailable or cannot be recovered | Backups, redundancy, disaster recovery and recovery testing |
 
----
+## 8. GRC Risk Assessment Approach
 
-# 🧠 GRC Assessment Approach
-
-This exercise follows a basic GRC risk assessment thought process:
+The assessment follows a structured risk and control approach:
 
 **Asset → Risk → Impact → Control → Evidence → Testing**
 
-### 1. Asset
+### 8.1 Asset Identification
 
-Highly confidential drug research document.
+The primary asset assessed is the highly confidential pharmaceutical research document containing information required for experimentation.
 
-### 2. Risk
+### 8.2 Risk Identification
 
-The document could be:
+The assessment identifies three primary risk scenarios:
 
-- Disclosed to unauthorized individuals
-- Modified incorrectly or maliciously
-- Lost or become unavailable
+- Confidential research information could be disclosed to unauthorised individuals.
+- Research information could be modified incorrectly or maliciously.
+- The document could be lost, corrupted or become unavailable when required.
 
-### 3. Impact
+### 8.3 Business Impact Assessment
 
-Potential impacts could include:
+Potential business consequences include:
 
-- Loss of intellectual property
-- Research disruption
-- Financial loss
-- Competitive disadvantage
-- Regulatory or legal consequences
-- Potential research or safety consequences
+- Loss of intellectual property.
+- Disruption to research and development activities.
+- Financial losses.
+- Competitive disadvantage.
+- Regulatory or legal consequences.
+- Potential research or safety implications.
 
-### 4. Controls
+### 8.4 Control Selection
 
-Potential controls include:
+Security controls were identified based on the information security objective they are intended to protect.
 
-**Confidentiality**
+The recommendations address access management, authentication, encryption, data protection, change management, monitoring, backup and recovery.
 
-- MFA
-- RBAC
-- Least privilege
-- Encryption
-- DLP
+### 8.5 Evidence Requirements and Control Validation
 
-**Integrity**
+Control documentation alone does not establish operating effectiveness. Appropriate evidence is required to assess whether controls have been implemented and are functioning as intended.
 
-- Version history
-- Change logging
-- Approval workflows
-- Restricted editing
+Evidence requirements include:
 
-**Availability**
+| Control Area | Evidence Required |
+|---|---|
+| Access Management | Current user access lists and permission records |
+| Access Reviews | Completed access review records and remediation evidence |
+| Authentication | MFA configuration and authentication policies |
+| Security Monitoring | Access logs and monitoring records |
+| Document Integrity | Version history and change records |
+| Backup Management | Backup schedules and backup records |
+| Recovery | Documented recovery test results |
 
-- Backups
-- Redundancy
-- Disaster recovery
-- Recovery testing
+### Control Validation Questions
 
-### 5. Evidence and Control Testing
+The following questions would guide evidence collection and control testing:
 
-I would not assume that a security control is working simply because it has been documented or implemented. I would request appropriate evidence and assess whether the control is operating as intended.
+- Can the organisation provide the current access list for the research document?
+- Is there evidence that access permissions are reviewed periodically?
+- Can the organisation demonstrate that MFA is enabled for authorised users?
+- Are access and document-related activities logged and monitored?
+- Can changes to the document be attributed to individual users?
+- Are backups maintained in accordance with defined requirements?
+- Can the organisation demonstrate that a backup can be successfully restored?
 
-Evidence could include:
+## 9. Assessment Observations
 
-- Access lists
-- Access review records
-- Authentication configuration
-- Audit logs
-- Version history
-- Backup records
-- Recovery test results
+The assessment highlights several important security considerations for protecting sensitive pharmaceutical research information.
 
-Examples of control-testing questions:
+**Confidentiality:** Access to the research document should be restricted according to business need, with appropriate authentication, encryption and monitoring safeguards.
 
-> "Show me the current access list."
+**Integrity:** Document modification should be controlled through restricted editing permissions, version history, change logging and appropriate approval processes.
 
-> "Show me evidence of the last access review."
+**Availability:** Backup, recovery and continuity arrangements should support access to research information during system disruption or accidental data loss.
 
-> "Show me the audit logs."
+The recommended controls provide a basis for evaluating the organisation's security arrangements. Actual control effectiveness would require review of implementation evidence and appropriate testing.
 
-> "Show me the backup."
+## 10. GRC Capabilities Demonstrated
 
-> "Show me evidence that the backup can be successfully restored."
-
----
-
-# 📚 Key Concepts Demonstrated
-
-This case study demonstrates my understanding of:
-
-- CIA Triad
-- Confidentiality
-- Integrity
-- Availability
-- Risk Assessment
-- Security Controls
-- Least Privilege
+- CIA Triad Assessment
+- Information Security Risk Identification
+- Confidentiality, Integrity and Availability Analysis
+- Security Control Identification and Recommendations
+- Access Management
 - Role-Based Access Control
+- Least Privilege
 - Multi-Factor Authentication
-- Encryption
+- Encryption and Data Protection
 - Data Loss Prevention
-- Access Reviews
-- Audit Logging
-- Version Control
+- Change Management and Version Control
 - Backup and Recovery
-- Disaster Recovery
-- Control Testing
-- Evidence Collection
+- Disaster Recovery and Business Continuity
+- Evidence Requirements
+- Control Validation and Testing
+- Risk and Control Analysis
 
----
-
-# 💡 Key Learning
-
-The CIA Triad provides a framework for identifying what needs to be protected within an organisation.
-
-Through this assessment, I learned to approach information security from a risk and control perspective. I considered:
-
-→ What information or asset needs protection?
-
-→ What could go wrong?
-
-→ What would the impact be if the risk occurred?
-
-→ What security controls could reduce the risk?
-
-→ What evidence would demonstrate that the controls are in place?
-
-→ How would I test whether those controls are operating effectively?
-
-This helped me understand how the CIA Triad connects to practical GRC activities, particularly risk identification, control selection, evidence collection and control testing.
-
----
-
-## 🛠️ Tools & Technologies
+## 11. Tools and Technologies
 
 - Microsoft Word
 - GitHub
 - Markdown
 
----
+## 12. Project Context
 
-## 📖 Learning Context
+This is a simulated security assessment based on a fictional pharmaceutical research scenario. It was developed to demonstrate the application of information security principles, risk identification, security control recommendations and evidence-based control validation.
 
-This project was created as part of my ongoing cybersecurity and Governance, Risk & Compliance (GRC) learning journey.
+The assessment identifies potential risks and recommended safeguards. It does not represent a live organisational security audit or independently verified control assessment.
