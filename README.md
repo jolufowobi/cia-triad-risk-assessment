@@ -263,21 +263,23 @@ This case study demonstrates my understanding of:
 
 # 💡 Key Learning
 
-The CIA Triad provides a framework for identifying what needs to be protected.
+The CIA Triad provides a framework for identifying what needs to be protected within an organisation.
 
-A GRC assessment goes beyond identifying security principles by considering:
+Through this assessment, I learned to approach information security from a risk and control perspective. I considered:
 
-**What are we protecting?**
+→ What information or asset needs protection?
 
 → What could go wrong?
 
-→ What would the impact be?
+→ What would the impact be if the risk occurred?
 
-→ What controls should address the risk?
+→ What security controls could reduce the risk?
 
-→ What evidence demonstrates that the controls exist?
+→ What evidence would demonstrate that the controls are in place?
 
-→ How can we test whether those controls are operating effectively?
+→ How would I test whether those controls are operating effectively?
+
+This helped me understand how the CIA Triad connects to practical GRC activities, particularly risk identification, control selection, evidence collection and control testing.
 
 ---
 
