@@ -1,8 +1,12 @@
-# CIA Triad Risk Assessment | OsCorp Research Document
+# 🔍 CIA Triad Risk Assessment | Pharmaceutical Research Document
 
-## 1. Executive Summary
+> Assessment of confidentiality, integrity and availability risks to a highly confidential pharmaceutical research document, with recommended controls and the evidence needed to prove they work.
 
-This assessment examines information security risks associated with the protection of highly confidential pharmaceutical research information at OsCorp, a fictional organisation developing a new medication.
+---
+
+## 1. 📌 Executive Summary
+
+This assessment examines information security risks associated with the protection of highly confidential pharmaceutical research information at a pharmaceutical research company developing a new medication.
 
 The assessment applies the **Confidentiality, Integrity and Availability (CIA) Triad** to evaluate how sensitive research information could be exposed, modified without authorisation or become unavailable when required.
 
@@ -10,9 +14,11 @@ The analysis identifies potential security risks and recommends controls to prot
 
 The assessment follows a practical GRC approach, connecting information security principles to risk identification, control recommendations, evidence requirements and control validation.
 
-## 2. Business Context
+---
 
-OsCorp is developing a highly confidential new medication. The early stages of the research project are led by Chief Scientist Harry Osborn.
+## 2. 🏢 Business Context
+
+The company is developing a highly confidential new medication. The early stages of the research project are led by the Chief Scientist.
 
 Information relating to the medication, including ingredients required for experimentation, is documented in a Microsoft Word file.
 
@@ -20,7 +26,9 @@ Because the document contains sensitive research information, unauthorised acces
 
 The organisation therefore needs appropriate safeguards to ensure that only authorised individuals can access the document, changes are properly controlled and the information remains available when needed.
 
-## 3. Assessment Objectives
+---
+
+## 3. 🎯 Assessment Objectives
 
 The objectives of this assessment are to:
 
@@ -31,11 +39,13 @@ The objectives of this assessment are to:
 - Identify evidence that could demonstrate whether the recommended controls have been implemented.
 - Establish considerations for validating control design and operating effectiveness.
 
-## 4. Confidentiality Assessment
+---
+
+## 4. 🔒 Confidentiality Assessment
 
 Confidentiality ensures that sensitive information is accessible only to individuals who have been authorised to view it.
 
-For OsCorp, the research document contains confidential information about the ingredients required for medication experimentation. Unauthorised disclosure could expose intellectual property, compromise research activities and create a competitive disadvantage.
+For the company, the research document contains confidential information about the ingredients required for medication experimentation. Unauthorised disclosure could expose intellectual property, compromise research activities and create a competitive disadvantage.
 
 ### Key Risk Considerations
 
@@ -73,11 +83,13 @@ The assessment considers the following questions:
 | Periodic Access Reviews | Helps confirm that access permissions remain appropriate as roles and responsibilities change. |
 | External Sharing Restrictions | Limits the ability to share confidential research information outside approved channels. |
 
-## 5. Integrity Assessment
+---
+
+## 5. ✍️ Integrity Assessment
 
 Integrity ensures that information remains accurate, complete and protected against unauthorised or inappropriate modification.
 
-For OsCorp, the research document must remain reliable throughout the medication development process. Unauthorised or accidental changes to research information could affect the accuracy of the documented ingredients and compromise the reliability of the information used by the research team.
+For the company, the research document must remain reliable throughout the medication development process. Unauthorised or accidental changes to research information could affect the accuracy of the documented ingredients and compromise the reliability of the information used by the research team.
 
 ### Key Risk Considerations
 
@@ -115,11 +127,13 @@ The assessment considers the following questions:
 | Versioned Backups | Provides recoverable copies of the document if information is altered or lost. |
 | Integrity Monitoring | Helps identify unexpected or unauthorised changes to sensitive information. |
 
-## 6. Availability Assessment
+---
+
+## 6. 🔄 Availability Assessment
 
 Availability ensures that information and systems remain accessible to authorised users when required.
 
-For OsCorp, the research team needs reliable access to the medication development document to support ongoing experimentation and research activities.
+For the company, the research team needs reliable access to the medication development document to support ongoing experimentation and research activities.
 
 An outage, accidental deletion, ransomware incident or storage failure could prevent authorised personnel from accessing critical research information and disrupt the development process.
 
@@ -162,7 +176,9 @@ The assessment considers the following questions:
 | Availability Monitoring | Helps identify service interruptions and storage availability issues. |
 | Recovery Time and Recovery Point Objectives | Establishes acceptable restoration timeframes and data loss tolerances. |
 
-## 7. CIA Risk Assessment Summary
+---
+
+## 7. 📊 CIA Risk Assessment Summary
 
 The following table summarises the key information security risks and recommended controls identified across the three dimensions of the CIA Triad.
 
@@ -172,7 +188,9 @@ The following table summarises the key information security risks and recommende
 | Integrity | Unauthorised or accidental modification of research information. | Inaccurate research records, unreliable information and potential disruption to research activities. | Restricted editing, version history, change logging, approval workflows and separation of duties. |
 | Availability | Loss of access to the research document due to outages, deletion or ransomware. | Research interruption, delayed activities and potential loss of critical information. | Regular backups, redundant storage, disaster recovery, business continuity and recovery testing. |
 
-## 8. GRC Risk Assessment Approach
+---
+
+## 8. 🧭 GRC Risk Assessment Approach
 
 This assessment follows a structured approach to connecting information assets, risks, controls and evidence.
 
@@ -180,7 +198,7 @@ The process can be summarised as:
 
 **Asset → Risk → Impact → Control → Evidence → Validation**
 
-| Assessment Stage | Application to OsCorp |
+| Assessment Stage | Application to the Company |
 |---|---|
 | Asset Identification | Identify the confidential pharmaceutical research document as an information asset requiring protection. |
 | Risk Identification | Consider potential unauthorised disclosure, inappropriate modification and loss of availability. |
@@ -191,7 +209,9 @@ The process can be summarised as:
 
 This approach helps ensure that security recommendations are connected to identifiable risks and that evidence requirements are considered as part of the wider GRC process.
 
-## 9. Evidence Requirements and Control Validation
+---
+
+## 9. 🧾 Evidence Requirements and Control Validation
 
 Identifying a security control is only one part of an effective GRC assessment. An organisation should also be able to demonstrate that relevant controls have been appropriately designed, implemented and are operating as intended.
 
@@ -224,7 +244,9 @@ For example, the existence of an access control policy does not, by itself, demo
 
 Similarly, the existence of a backup schedule does not establish that recovery is effective. Restoration records and test results would provide stronger evidence of the organisation's ability to recover information.
 
-## 10. Key Assessment Observations
+---
+
+## 10. ✅ Key Assessment Observations
 
 The assessment highlights several considerations for protecting sensitive research information:
 
@@ -240,7 +262,9 @@ The assessment highlights several considerations for protecting sensitive resear
 
 6. **Evidence is essential to control assurance.** Policies and documented procedures should be supported by records demonstrating how controls are implemented and maintained.
 
-## 11. Practitioner notes
+---
+
+## 11. 💡 Practitioner notes
 
 This assessment demonstrates how I apply the CIA Triad to evaluate information security risks affecting sensitive business information.
 
@@ -248,25 +272,30 @@ I assessed the potential consequences of unauthorised disclosure, inappropriate 
 
 The assessment also demonstrates how I connect information security principles to practical GRC activities, including risk identification, control recommendations, evidence requirements and control validation.
 
-## 12. Assessment Basis and Scope
+---
 
-This assessment examines a defined business scenario involving the protection of highly confidential pharmaceutical research information.
+## 12. 📎 Assessment Basis and Scope
+
+This assessment examines a defined scenario involving the protection of highly confidential pharmaceutical research information.
 
 The risk analysis, assessment questions, recommended security controls, evidence requirements and control validation considerations represent my documented assessment work.
 
-The project is a scenario-based security assessment and does not represent a live organisational security audit or independently verified control assessment.
-
-## 13. Tools and Technologies
-
-- Microsoft Word
-- Information Security Risk Assessment
-- CIA Triad
-- Governance, Risk and Compliance (GRC) Principles
-- Security Control Recommendations
-- Evidence and Control Validation
+Scenario-based assessment; control recommendations have not been tested against a live environment.
 
 ---
 
-**Project:** CIA Triad Risk Assessment | OsCorp Research Document  
+## 13. 🧰 Frameworks and Concepts
+
+- CIA Triad (Confidentiality, Integrity, Availability)
+- ISO/IEC 27001:2022 Annex A (access control, cryptography, logging, backup)
+- NIST Cybersecurity Framework 2.0
+- Role-Based Access Control (RBAC) and Least Privilege
+- Data Loss Prevention (DLP)
+- Business Continuity and Disaster Recovery (RTO / RPO)
+- Evidence Requirements and Control Validation
+
+---
+
+**Project:** CIA Triad Risk Assessment | Pharmaceutical Research Document  
 **Assessment Focus:** Confidentiality, Integrity and Availability  
 **Domain:** Cybersecurity | Information Security | GRC
