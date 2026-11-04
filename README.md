@@ -240,7 +240,7 @@ The assessment highlights several considerations for protecting sensitive resear
 
 6. **Evidence is essential to control assurance.** Policies and documented procedures should be supported by records demonstrating how controls are implemented and maintained.
 
-## 11. Learning and Professional Application
+## 11. Practitioner notes
 
 This assessment demonstrates how I apply the CIA Triad to evaluate information security risks affecting sensitive business information.
 
